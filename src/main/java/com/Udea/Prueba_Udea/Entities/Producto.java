@@ -1,4 +1,4 @@
-package Entities;
+package com.Udea.Prueba_Udea.Entities;
 
 public class Producto {
 

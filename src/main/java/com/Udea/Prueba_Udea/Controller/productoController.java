@@ -1,7 +1,7 @@
-package Controller;
+package com.Udea.Prueba_Udea.Controller;
 
-import Entities.Producto;
-import Services.productoService;
+import com.Udea.Prueba_Udea.Entities.Producto;
+import com.Udea.Prueba_Udea.Services.productoService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,9 +17,9 @@ public class productoController {
     }
 
     @GetMapping("/LeerProducto")
-    public String leerProducto(){
+    public Producto leerProducto(){
         Producto p = new Producto("R01", "Manzana", 5200, 50, "Frutas");
-        return p.toString();
+        return p;
     }
 
     @GetMapping("/ListaProductos")

@@ -1,6 +1,6 @@
-package Services;
+package com.Udea.Prueba_Udea.Services;
 
-import Entities.Producto;
+import com.Udea.Prueba_Udea.Entities.Producto;
 import java.util.ArrayList;
 
 public class productoService {
