@@ -24,4 +24,23 @@ public class productoService {
         lista.add(new Producto("RE04", "Tomate", 2500, 80, "Verduras"));
         lista.add(new Producto("RE05", "Cebolla", 3000, 70, "Verduras"));
     }
+
+    public Producto buscarProducto(int index){
+        return lista.get(index);
+    }
+
+    public String crearProducto(Producto p){
+        lista.add(p);
+        return "Producto registrado";
+    }
+
+    public String actualizarProducto(int index, Producto p){
+        lista.set(index, p);
+        return "Producto modificado";
+    }
+
+    public String eliminarProducto(int index){
+        lista.remove(index);
+        return "Producto eliminado";
+    }
 }
